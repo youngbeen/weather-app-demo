@@ -1,0 +1,76 @@
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  background: url(./assets/background.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  /* text-align: center; */
+}
+
+.city {
+  padding: 60px 0;
+  /* height: 30%; */
+  /* line-height: 100%; */
+  /* padding-top: 30px; */
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.box-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-btn {
+  cursor: pointer;
+  user-select: none;
+}
+
+.weather-icon {
+  height: 186px;
+  width: 256px;
+  object-fit: contain;
+}
+
+.current-temp {
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 56px;
+}
+
+.box-sub {
+  margin-top: 20px;
+}
+
+.temp-detail {
+  text-align: center;
+}
+
+.temp {
+  font-size: 50px;
+  opacity: 0.7;
+}
+
+.weather-detail {
+  font-size: 48px;
+  text-transform: capitalize;
+}
+
+.spin {
+  animation: spining 2s linear infinite;
+}
+
+@keyframes spining {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
