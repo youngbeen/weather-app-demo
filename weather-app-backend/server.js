@@ -1,6 +1,8 @@
 const express = require('express')
 let app = express()
 // var url = require('url')
+app.set('views', './views')
+app.set('view engine', 'pug')
 
 const todayWeathers = [
   {
@@ -33,7 +35,11 @@ const todayWeathers = [
   }
 ]
 
-app.get('/index.html', (req, res) => {
+app.get('/', (req, res) => {
+  res.render('landing', { title: 'Hey', message: 'Hello there!' })
+})
+
+app.get('/weather.html', (req, res) => {
   res.sendFile(__dirname + '/application/index.html')
 })
 

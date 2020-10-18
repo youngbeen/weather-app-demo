@@ -8,6 +8,7 @@
   background-size: cover;
   color: #fff;
   /* text-align: center; */
+  overflow-y: auto;
 }
 
 .city {
@@ -29,6 +30,10 @@
 .icon-btn {
   cursor: pointer;
   user-select: none;
+}
+
+.icon-arrow {
+  width: 120px;
 }
 
 .weather-icon {
@@ -64,6 +69,36 @@
 
 .spin {
   animation: spining 2s linear infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  .city {
+    font-size: 50px;
+  }
+  .icon-refresh {
+    height: 128px;
+  }
+  .icon-arrow {
+    width: 60px
+  }
+  .weather-icon {
+    height: 93px;
+    width: 128px;
+  }
+  .current-temp {
+    height: 35px;
+    line-height: 35px;
+    font-size: 28px;
+  }
+  .box-sub {
+    margin-top: 10px;
+  }
+  .temp {
+    font-size: 25px;
+  }
+  .weather-detail {
+    font-size: 24px;
+  }
 }
 
 @keyframes spining {

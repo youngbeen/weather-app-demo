@@ -4,8 +4,18 @@
 ## How To Use
 
 1. `node weather-app-backend/server.js`
-2. visit `http://127.0.0.1:8888/index.html`
+2. visit `http://127.0.0.1:8888/`
 
 ## How To Build Front End Files
 
 Refer README in `weather-app-front`
+
+
+## Goals TODO:
+* ignore 需求文档，public repo
+
+## Bonus:
+* 数据库承载数据
+* 部署到docker或者AWS
+* 文档完善
+* 页面优化

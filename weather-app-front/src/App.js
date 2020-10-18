@@ -126,7 +126,7 @@ function App() {
         <div className="current-temp">{weatherInfo.temp}°</div>
       </div>
     } else {
-      return <img className={loading ? 'icon-btn spin' : 'icon-btn'} src={IconRefresh} alt="refresh" title="refresh" onClick={() => handleRefresh()} />
+      return <img className={loading ? 'icon-btn icon-refresh spin' : 'icon-btn icon-refresh'} src={IconRefresh} alt="refresh" title="refresh" onClick={() => handleRefresh()} />
     }
   }
 
@@ -138,9 +138,9 @@ function App() {
 
       <div className="box-weather-info">
         <div className="box-main">
-          <img className="icon-btn" src={IconLeftArrow} alt="previous" title="previous" onClick={() => switchCity(-1)} />
+          <img className="icon-btn icon-arrow" src={IconLeftArrow} alt="previous" title="previous" onClick={() => switchCity(-1)} />
           <WeatherArea></WeatherArea>
-          <img className="icon-btn" src={IconRightArrow} alt="next" title="next" onClick={() => switchCity(1)} />
+          <img className="icon-btn icon-arrow" src={IconRightArrow} alt="next" title="next" onClick={() => switchCity(1)} />
         </div>
         <div className="box-sub">
           {weatherInfo.fetched &&
