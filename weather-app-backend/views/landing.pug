@@ -1,0 +1,23 @@
+html
+  head
+    title= title
+    link()
+    style(type="text/css").
+      body {
+        text-align: center;
+      }
+      #btn {
+        margin: 20% auto;
+        padding: 12px;
+        background: rgb(253,98,29);
+        color: #fff;
+        font-size: 40px;
+      }
+    script(type='text/javascript').
+      window.onload = function () {
+        document.querySelector('#btn').addEventListener('click', function () {
+          window.location.href = '/weather.html'
+        })
+      }
+  body
+    button#btn Start App

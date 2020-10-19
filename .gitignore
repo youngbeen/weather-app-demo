@@ -8,7 +8,7 @@
 
 # testing
 /weather-app-front/coverage
-/weather-app-backend
+/weather-app-backend/coverage
 
 # production
 /weather-app-front/build
