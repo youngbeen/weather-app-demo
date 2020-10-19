@@ -1,6 +1,4 @@
 
-> The front end page files are already included in `weather-app-backend`. if you want to deploy some changes, move new built files to path `weather-app-backend/application`
-
 ## Database
 
 This project uses local mock data in Nodejs server as default.
@@ -13,6 +11,8 @@ To test with database, change the value of `let useDatabase = false` in file `we
 1. `cd weather-app-backend`
 2. `npm i && npm start`
 3. visit `http://0.0.0.0:8888/`
+
+> The front end page files are already included in `weather-app-backend`. if you want to deploy some changes, move new built files to path `weather-app-backend/application`
 
 ## How To Build Front End Files
 
